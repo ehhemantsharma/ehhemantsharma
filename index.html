@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title>Eh.Hemantsharma</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div class="background">
+
+<div class="nav">
+     <a class="a active" href="#">HOME</a>
+     <a class="b" href="#">ABOUT ME</a>
+     <a class="c" href="#">GALLARY</a>
+     <a class="d" href="#">CONTACT US</a> 
+</div>
+<div class="content">
+         <div class="home">
+           <h1>EH.Hemantsharma </h1>
+           <h3> new web designer </h3>
+</div>
+  <div class="aboutus">
+          <p><b> Hello friends,</b><br/>
+		  Welcome to my portfolio, my name is Hemant sharma. I am new web designer,<br/>
+		  from nagaur,rajasthan.<br/>
+		  My instagram I'd is - <b>eh.hemantsharma</b>
+		  </p>
+		  
+		  </div>
+		  <div class="gallery">
+		      <div class="image">
+			      <img src="images/2.jpg" />
+		  </div>
+		     <div class="image">
+			      <img src="images/3.jpg" />
+		  </div>
+		     <div class="image">
+			      <img src="images/4.jpg" />
+		  </div>
+		     <div class="image">
+			      <img src="images/5.jpg" />
+		  </div>
+		     <div class="image">
+			      <img src="images/6.jpg" />
+		  </div>   
+		     <div class="image">
+			      <img src="images/7.jpg" />
+		  </div>
+		     <div class="image">
+			      <img src="images/8.jpg" />
+		  </div>   
+		     <div class="image">
+			      <img src="images/9.jpg" />
+		  </div>
+		     <div class="image">
+			      <img src="images/10.jpg" />
+		  </div>
+		</div>  
+		  
+		  <div class="contactus">
+		      <div class="contactform">
+			      <form action="" method="post">
+				       <input type="text" name="" class="inputtext" value="First Name">
+					   <input type="text" name="" class="inputtext" value="Last Name">
+					   <input type="text" name="" class="inputtext" value="Your Email">
+					   <textarea cols="4" rows="6" class="inputmessage" >Your Message...!!!
+					   </textarea>
+					   <input type="button" name="" class="submitbutton" value="Submit">
+					  
+		        </form>
+		    </div>
+        </div>  
+   </div>
+
+</div>
+
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+          $('a').click(function(){
+               //alert("clicked");
+               var selected = $(this);
+               $('a').removeClass('active');
+               $(selected).addClass('active');  
+       });
+	   
+	   var $a = $('.a'),
+	   $b = $('.b'),
+	   $c = $('.c'),
+	   $d = $('.d'),
+	   $home = $('.home'),
+	   $aboutus = $('.aboutus');
+	   $gallery = $('.gallery'),
+	   $contactus = $('.contactus');
+	   
+	   $a.click(function(){
+	       $home.fadeIn();
+	       $aboutus.fadeOut();
+		   $gallery.fadeOut();
+		   $contactus.fadeOut()
+		});
+		$b.click(function(){
+		      $aboutus.fadeIn();
+			  $home.fadeOut();
+			  $gallery.fadeOut();
+			  $contactus.fadeOut()
+	    });
+	    $c.click(function(){
+		      $gallery.fadeIn();
+			  $home.fadeOut();
+			  $aboutus.fadeOut();
+			  $contactus.fadeOut()
+		});
+		$d.click(function(){
+		      $contactus.fadeIn();
+			  $home.fadeOut();
+			  $aboutus.fadeOut();
+			  $gallery.fadeOut()
+		});
+	   
+  });
+</script>
+</body>
+</html>
